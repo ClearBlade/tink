@@ -19,10 +19,6 @@ package subtle
 
 import "fmt"
 
-const (
-	maxInt = int(^uint(0) >> 1)
-)
-
 // ValidateAESKeySize checks if the given key size is a valid AES key size.
 func ValidateAESKeySize(sizeInBytes uint32) error {
 	switch sizeInBytes {

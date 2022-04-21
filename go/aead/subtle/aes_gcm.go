@@ -31,6 +31,9 @@ const (
 	// AESGCMTagSize is the only tag size that this implementation supports.
 	AESGCMTagSize          = 16
 	maxAESGCMPlaintextSize = (1 << 36) - 32
+	intSize                = 32 << (^uint(0) >> 63) // 32 or 64
+	maxInt                 = 1<<(intSize-1) - 1
+	maxIntPlaintextSize    = maxInt - AESGCMIVSize - AESGCMTagSize
 )
 
 // AESGCM is an implementation of AEAD interface.
@@ -61,7 +64,7 @@ func NewAESGCM(key []byte) (*AESGCM, error) {
 func (a *AESGCM) Encrypt(pt, aad []byte) ([]byte, error) {
 	// Although Seal() function already checks for plaintext length,
 	// this check is repeated here to avoid panic.
-	if len(pt) > maxPtSize() {
+	if uint64(len(pt)) > maxPtSize() {
 		return nil, fmt.Errorf("aes_gcm: plaintext too long")
 	}
 	cipher, err := a.newCipher(a.Key)
@@ -110,10 +113,12 @@ func (a *AESGCM) newCipher(key []byte) (cipher.AEAD, error) {
 	return ret, nil
 }
 
-func maxPtSize() int {
-	x := maxInt - AESGCMIVSize - AESGCMTagSize
-	if x > maxAESGCMPlaintextSize {
-		return maxAESGCMPlaintextSize
+func maxPtSize() uint64 {
+	var maxPlaintextSize uint64
+	maxPlaintextSize = maxIntPlaintextSize
+	if maxIntPlaintextSize > maxAESGCMPlaintextSize {
+		maxPlaintextSize = maxAESGCMPlaintextSize
+		return maxPlaintextSize
 	}
-	return x
+	return maxPlaintextSize
 }
