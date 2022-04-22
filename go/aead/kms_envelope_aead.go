@@ -22,10 +22,10 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/clearblade/tink/go/core/registry"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
+	"github.com/clearblade/tink/go/tink"
 	"github.com/golang/protobuf/proto"
-	"github.com/google/tink/go/core/registry"
-	"github.com/google/tink/go/tink"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 )
 
 const (

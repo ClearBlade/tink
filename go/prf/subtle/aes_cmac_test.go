@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/google/tink/go/prf/subtle"
-	"github.com/google/tink/go/testutil"
+	"github.com/clearblade/tink/go/prf/subtle"
+	"github.com/clearblade/tink/go/testutil"
 )
 
 func TestVectorsRFC4493(t *testing.T) {

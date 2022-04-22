@@ -23,10 +23,10 @@ import (
 	"math/rand"
 	"testing"
 
+	"github.com/clearblade/tink/go/aead/subtle"
+	"github.com/clearblade/tink/go/subtle/random"
+	"github.com/clearblade/tink/go/testutil"
 	"golang.org/x/crypto/chacha20poly1305"
-	"github.com/google/tink/go/aead/subtle"
-	"github.com/google/tink/go/subtle/random"
-	"github.com/google/tink/go/testutil"
 )
 
 func TestXChaCha20Poly1305EncryptDecrypt(t *testing.T) {

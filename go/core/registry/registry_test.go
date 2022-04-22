@@ -19,17 +19,17 @@ package registry_test
 import (
 	"testing"
 
+	"github.com/clearblade/tink/go/aead"
+	"github.com/clearblade/tink/go/core/registry"
+	"github.com/clearblade/tink/go/mac"
+	"github.com/clearblade/tink/go/mac/subtle"
+	gcmpb "github.com/clearblade/tink/go/proto/aes_gcm_go_proto"
+	commonpb "github.com/clearblade/tink/go/proto/common_go_proto"
+	hmacpb "github.com/clearblade/tink/go/proto/hmac_go_proto"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
+	"github.com/clearblade/tink/go/testing/fakekms"
+	"github.com/clearblade/tink/go/testutil"
 	"github.com/golang/protobuf/proto"
-	"github.com/google/tink/go/aead"
-	"github.com/google/tink/go/core/registry"
-	"github.com/google/tink/go/mac"
-	"github.com/google/tink/go/mac/subtle"
-	"github.com/google/tink/go/testing/fakekms"
-	"github.com/google/tink/go/testutil"
-	gcmpb "github.com/google/tink/go/proto/aes_gcm_go_proto"
-	commonpb "github.com/google/tink/go/proto/common_go_proto"
-	hmacpb "github.com/google/tink/go/proto/hmac_go_proto"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 )
 
 func TestRegisterKeyManager(t *testing.T) {

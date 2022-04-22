@@ -21,8 +21,8 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/google/tink/go/aead/subtle"
-	"github.com/google/tink/go/subtle/random"
+	"github.com/clearblade/tink/go/aead/subtle"
+	"github.com/clearblade/tink/go/subtle/random"
 )
 
 // These test vectors have been taken from Appendix C in go/rfc/8452.

@@ -17,9 +17,9 @@
 package daead
 
 import (
+	aspb "github.com/clearblade/tink/go/proto/aes_siv_go_proto"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
 	"github.com/golang/protobuf/proto"
-	aspb "github.com/google/tink/go/proto/aes_siv_go_proto"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 )
 
 // AESSIVKeyTemplate is a KeyTemplate that generates a AES-SIV key.

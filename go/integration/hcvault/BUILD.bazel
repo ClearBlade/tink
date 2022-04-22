@@ -10,7 +10,7 @@ go_library(
         "hcvault_aead.go",
         "hcvault_client.go",
     ],
-    importpath = "github.com/google/tink/go/integration/hcvault",
+    importpath = "github.com/clearblade/tink/go/integration/hcvault",
     deps = [
         "//core/registry:go_default_library",
         "//tink:go_default_library",

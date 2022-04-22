@@ -74,7 +74,7 @@ pip3 install tink
 *   Golang
 
 ```sh
-go get github.com/google/tink/go/...
+go get github.com/clearblade/tink/go/...
 ```
 
 *   Java

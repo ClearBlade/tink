@@ -21,7 +21,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/google/tink/go/testutil"
+	"github.com/clearblade/tink/go/testutil"
 )
 
 func TestPopulateSuite(t *testing.T) {

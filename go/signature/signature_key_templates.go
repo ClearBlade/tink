@@ -17,10 +17,10 @@
 package signature
 
 import (
+	commonpb "github.com/clearblade/tink/go/proto/common_go_proto"
+	ecdsapb "github.com/clearblade/tink/go/proto/ecdsa_go_proto"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
 	"github.com/golang/protobuf/proto"
-	commonpb "github.com/google/tink/go/proto/common_go_proto"
-	ecdsapb "github.com/google/tink/go/proto/ecdsa_go_proto"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 )
 
 // This file contains pre-generated KeyTemplates for Signer and Verifier.

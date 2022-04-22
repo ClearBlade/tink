@@ -19,10 +19,10 @@ package keyset_test
 import (
 	"testing"
 
-	"github.com/google/tink/go/keyset"
-	"github.com/google/tink/go/subtle/random"
-	"github.com/google/tink/go/testutil"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
+	"github.com/clearblade/tink/go/keyset"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
+	"github.com/clearblade/tink/go/subtle/random"
+	"github.com/clearblade/tink/go/testutil"
 )
 
 func TestValidateKeyVersion(t *testing.T) {

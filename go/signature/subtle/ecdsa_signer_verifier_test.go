@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"testing"
 
-	subtleSignature "github.com/google/tink/go/signature/subtle"
-	"github.com/google/tink/go/subtle/random"
-	"github.com/google/tink/go/subtle"
-	"github.com/google/tink/go/testutil"
+	subtleSignature "github.com/clearblade/tink/go/signature/subtle"
+	"github.com/clearblade/tink/go/subtle"
+	"github.com/clearblade/tink/go/subtle/random"
+	"github.com/clearblade/tink/go/testutil"
 )
 
 func TestSignVerify(t *testing.T) {

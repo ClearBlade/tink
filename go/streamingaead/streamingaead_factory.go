@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/google/tink/go/core/primitiveset"
-	"github.com/google/tink/go/core/registry"
-	"github.com/google/tink/go/keyset"
-	"github.com/google/tink/go/tink"
+	"github.com/clearblade/tink/go/core/primitiveset"
+	"github.com/clearblade/tink/go/core/registry"
+	"github.com/clearblade/tink/go/keyset"
+	"github.com/clearblade/tink/go/tink"
 )
 
 // New returns a StreamingAEAD primitive from the given keyset handle.

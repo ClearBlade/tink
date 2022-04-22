@@ -27,14 +27,14 @@ import (
 
 	"flag"
 	// context is used to cancel outstanding requests
-	"github.com/google/tink/go/aead"
-	"github.com/google/tink/go/core/registry"
-	"github.com/google/tink/go/insecurecleartextkeyset"
-	"github.com/google/tink/go/integration/awskms"
-	"github.com/google/tink/go/integration/gcpkms"
-	"github.com/google/tink/go/keyset"
+	"github.com/clearblade/tink/go/aead"
+	"github.com/clearblade/tink/go/core/registry"
+	"github.com/clearblade/tink/go/insecurecleartextkeyset"
+	"github.com/clearblade/tink/go/integration/awskms"
+	"github.com/clearblade/tink/go/integration/gcpkms"
+	"github.com/clearblade/tink/go/keyset"
 
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
 )
 
 var (

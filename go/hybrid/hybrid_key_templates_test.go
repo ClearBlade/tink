@@ -20,10 +20,10 @@ import (
 	"bytes"
 	"testing"
 
+	"github.com/clearblade/tink/go/keyset"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
+	"github.com/clearblade/tink/go/testutil"
 	"github.com/golang/protobuf/proto"
-	"github.com/google/tink/go/keyset"
-	"github.com/google/tink/go/testutil"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 )
 
 func TestKeyTemplates(t *testing.T) {

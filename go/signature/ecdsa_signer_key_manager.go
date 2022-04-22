@@ -22,13 +22,13 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/clearblade/tink/go/keyset"
+	commonpb "github.com/clearblade/tink/go/proto/common_go_proto"
+	ecdsapb "github.com/clearblade/tink/go/proto/ecdsa_go_proto"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
+	subtleSignature "github.com/clearblade/tink/go/signature/subtle"
+	"github.com/clearblade/tink/go/subtle"
 	"github.com/golang/protobuf/proto"
-	"github.com/google/tink/go/keyset"
-	subtleSignature "github.com/google/tink/go/signature/subtle"
-	"github.com/google/tink/go/subtle"
-	commonpb "github.com/google/tink/go/proto/common_go_proto"
-	ecdsapb "github.com/google/tink/go/proto/ecdsa_go_proto"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 )
 
 const (

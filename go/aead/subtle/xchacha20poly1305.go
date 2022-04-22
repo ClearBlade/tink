@@ -20,9 +20,9 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/clearblade/tink/go/subtle/random"
+	"github.com/clearblade/tink/go/tink"
 	"golang.org/x/crypto/chacha20poly1305"
-	"github.com/google/tink/go/subtle/random"
-	"github.com/google/tink/go/tink"
 )
 
 // XChaCha20Poly1305 is an implementation of AEAD interface.

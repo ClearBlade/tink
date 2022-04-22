@@ -25,11 +25,11 @@ import (
 
 	"flag"
 	// context is used to cancel outstanding requests
-	"github.com/google/tink/go/aead"
-	"github.com/google/tink/go/core/registry"
-	"github.com/google/tink/go/keyset"
-	"github.com/google/tink/go/subtle/random"
-	"github.com/google/tink/go/tink"
+	"github.com/clearblade/tink/go/aead"
+	"github.com/clearblade/tink/go/core/registry"
+	"github.com/clearblade/tink/go/keyset"
+	"github.com/clearblade/tink/go/subtle/random"
+	"github.com/clearblade/tink/go/tink"
 )
 
 const (

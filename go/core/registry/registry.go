@@ -34,8 +34,8 @@ import (
 	"fmt"
 	"sync"
 
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
 	"github.com/golang/protobuf/proto"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 )
 
 var (

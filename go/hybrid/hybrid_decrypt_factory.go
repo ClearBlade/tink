@@ -19,11 +19,11 @@ package hybrid
 import (
 	"fmt"
 
-	"github.com/google/tink/go/core/cryptofmt"
-	"github.com/google/tink/go/core/primitiveset"
-	"github.com/google/tink/go/core/registry"
-	"github.com/google/tink/go/keyset"
-	"github.com/google/tink/go/tink"
+	"github.com/clearblade/tink/go/core/cryptofmt"
+	"github.com/clearblade/tink/go/core/primitiveset"
+	"github.com/clearblade/tink/go/core/registry"
+	"github.com/clearblade/tink/go/keyset"
+	"github.com/clearblade/tink/go/tink"
 )
 
 // NewHybridDecrypt returns an HybridDecrypt primitive from the given keyset handle.

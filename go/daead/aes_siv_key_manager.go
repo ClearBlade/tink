@@ -19,13 +19,13 @@ package daead
 import (
 	"fmt"
 
+	"github.com/clearblade/tink/go/daead/subtle"
+	"github.com/clearblade/tink/go/keyset"
+	"github.com/clearblade/tink/go/subtle/random"
 	"github.com/golang/protobuf/proto"
-	"github.com/google/tink/go/daead/subtle"
-	"github.com/google/tink/go/keyset"
-	"github.com/google/tink/go/subtle/random"
 
-	aspb "github.com/google/tink/go/proto/aes_siv_go_proto"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
+	aspb "github.com/clearblade/tink/go/proto/aes_siv_go_proto"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
 )
 
 const (

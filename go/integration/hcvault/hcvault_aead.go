@@ -23,8 +23,8 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/clearblade/tink/go/tink"
 	"github.com/hashicorp/vault/api"
-	"github.com/google/tink/go/tink"
 )
 
 // vaultAEAD represents a HashiCorp Vault service to a particular URI.

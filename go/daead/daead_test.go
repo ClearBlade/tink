@@ -23,10 +23,10 @@ import (
 	"log"
 	"testing"
 
-	"github.com/google/tink/go/core/registry"
-	"github.com/google/tink/go/daead"
-	"github.com/google/tink/go/keyset"
-	"github.com/google/tink/go/testutil"
+	"github.com/clearblade/tink/go/core/registry"
+	"github.com/clearblade/tink/go/daead"
+	"github.com/clearblade/tink/go/keyset"
+	"github.com/clearblade/tink/go/testutil"
 )
 
 func Example() {

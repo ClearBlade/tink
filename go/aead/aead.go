@@ -22,7 +22,7 @@ package aead
 import (
 	"fmt"
 
-	"github.com/google/tink/go/core/registry"
+	"github.com/clearblade/tink/go/core/registry"
 )
 
 func init() {

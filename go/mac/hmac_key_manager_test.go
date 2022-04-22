@@ -22,15 +22,15 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/clearblade/tink/go/core/registry"
+	subtleMac "github.com/clearblade/tink/go/mac/subtle"
+	commonpb "github.com/clearblade/tink/go/proto/common_go_proto"
+	hmacpb "github.com/clearblade/tink/go/proto/hmac_go_proto"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
+	"github.com/clearblade/tink/go/subtle"
+	"github.com/clearblade/tink/go/subtle/random"
+	"github.com/clearblade/tink/go/testutil"
 	"github.com/golang/protobuf/proto"
-	"github.com/google/tink/go/core/registry"
-	subtleMac "github.com/google/tink/go/mac/subtle"
-	"github.com/google/tink/go/subtle/random"
-	"github.com/google/tink/go/subtle"
-	"github.com/google/tink/go/testutil"
-	commonpb "github.com/google/tink/go/proto/common_go_proto"
-	hmacpb "github.com/google/tink/go/proto/hmac_go_proto"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 )
 
 func TestGetPrimitiveBasic(t *testing.T) {

@@ -21,14 +21,14 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/clearblade/tink/go/core/registry"
+	"github.com/clearblade/tink/go/subtle/random"
+	"github.com/clearblade/tink/go/testutil"
 	"github.com/golang/protobuf/proto"
-	"github.com/google/tink/go/core/registry"
-	"github.com/google/tink/go/subtle/random"
-	"github.com/google/tink/go/testutil"
 
-	"github.com/google/tink/go/daead/subtle"
-	aspb "github.com/google/tink/go/proto/aes_siv_go_proto"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
+	"github.com/clearblade/tink/go/daead/subtle"
+	aspb "github.com/clearblade/tink/go/proto/aes_siv_go_proto"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
 )
 
 func TestAESSIVPrimitive(t *testing.T) {

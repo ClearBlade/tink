@@ -20,13 +20,13 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/clearblade/tink/go/core/registry"
+	"github.com/clearblade/tink/go/hybrid/subtle"
+	"github.com/clearblade/tink/go/keyset"
+	commonpb "github.com/clearblade/tink/go/proto/common_go_proto"
+	eahpb "github.com/clearblade/tink/go/proto/ecies_aead_hkdf_go_proto"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
 	"github.com/golang/protobuf/proto"
-	"github.com/google/tink/go/core/registry"
-	"github.com/google/tink/go/hybrid/subtle"
-	"github.com/google/tink/go/keyset"
-	commonpb "github.com/google/tink/go/proto/common_go_proto"
-	eahpb "github.com/google/tink/go/proto/ecies_aead_hkdf_go_proto"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 )
 
 const (

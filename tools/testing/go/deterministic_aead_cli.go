@@ -33,9 +33,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/google/tink/go/daead"
-	"github.com/google/tink/go/keyset"
-	"github.com/google/tink/go/testkeyset"
+	"github.com/clearblade/tink/go/daead"
+	"github.com/clearblade/tink/go/keyset"
+	"github.com/clearblade/tink/go/testkeyset"
 )
 
 func main() {

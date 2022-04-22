@@ -20,15 +20,15 @@ import (
 	"bytes"
 	"testing"
 
+	"github.com/clearblade/tink/go/aead"
+	"github.com/clearblade/tink/go/keyset"
+	commonpb "github.com/clearblade/tink/go/proto/common_go_proto"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
+	"github.com/clearblade/tink/go/signature"
+	"github.com/clearblade/tink/go/subtle/random"
+	"github.com/clearblade/tink/go/testkeyset"
+	"github.com/clearblade/tink/go/testutil"
 	"github.com/golang/protobuf/proto"
-	"github.com/google/tink/go/aead"
-	"github.com/google/tink/go/keyset"
-	"github.com/google/tink/go/signature"
-	"github.com/google/tink/go/subtle/random"
-	"github.com/google/tink/go/testkeyset"
-	"github.com/google/tink/go/testutil"
-	commonpb "github.com/google/tink/go/proto/common_go_proto"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 )
 
 func TestHybridFactoryTest(t *testing.T) {

@@ -10,7 +10,7 @@ go_library(
         "gcp_kms_aead.go",
         "gcp_kms_client.go",
     ],
-    importpath = "github.com/google/tink/go/integration/gcpkms",
+    importpath = "github.com/clearblade/tink/go/integration/gcpkms",
     visibility = ["//visibility:public"],
     deps = [
         "//core/registry:go_default_library",

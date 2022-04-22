@@ -21,10 +21,10 @@ import (
 	"bytes"
 	"context"
 
-	"github.com/google/tink/go/keyset"
-	"github.com/google/tink/go/testkeyset"
+	"github.com/clearblade/tink/go/keyset"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
+	"github.com/clearblade/tink/go/testkeyset"
 	pb "github.com/google/tink/proto/testing/testing_api_go_grpc"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 
 	"github.com/golang/protobuf/proto"
 )

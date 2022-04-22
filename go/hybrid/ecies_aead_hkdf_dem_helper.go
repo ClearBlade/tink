@@ -21,14 +21,14 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/clearblade/tink/go/core/registry"
+	"github.com/clearblade/tink/go/hybrid/subtle"
+	ctrhmacpb "github.com/clearblade/tink/go/proto/aes_ctr_hmac_aead_go_proto"
+	gcmpb "github.com/clearblade/tink/go/proto/aes_gcm_go_proto"
+	sivpb "github.com/clearblade/tink/go/proto/aes_siv_go_proto"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
+	"github.com/clearblade/tink/go/tink"
 	"github.com/golang/protobuf/proto"
-	"github.com/google/tink/go/core/registry"
-	"github.com/google/tink/go/hybrid/subtle"
-	"github.com/google/tink/go/tink"
-	ctrhmacpb "github.com/google/tink/go/proto/aes_ctr_hmac_aead_go_proto"
-	gcmpb "github.com/google/tink/go/proto/aes_gcm_go_proto"
-	sivpb "github.com/google/tink/go/proto/aes_siv_go_proto"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 )
 
 const (

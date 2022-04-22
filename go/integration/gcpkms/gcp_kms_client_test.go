@@ -19,9 +19,9 @@ package gcpkms
 import (
 	"log"
 
-	"github.com/google/tink/go/aead"
-	"github.com/google/tink/go/core/registry"
-	"github.com/google/tink/go/keyset"
+	"github.com/clearblade/tink/go/aead"
+	"github.com/clearblade/tink/go/core/registry"
+	"github.com/clearblade/tink/go/keyset"
 )
 
 func Example() {

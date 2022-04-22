@@ -21,8 +21,8 @@ import (
 	"hash"
 	"io"
 
+	"github.com/clearblade/tink/go/subtle"
 	"golang.org/x/crypto/hkdf"
-	"github.com/google/tink/go/subtle"
 )
 
 const (

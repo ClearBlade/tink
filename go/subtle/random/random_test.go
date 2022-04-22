@@ -19,7 +19,7 @@ package random_test
 import (
 	"testing"
 
-	"github.com/google/tink/go/subtle/random"
+	"github.com/clearblade/tink/go/subtle/random"
 )
 
 func TestGetRandomBytes(t *testing.T) {

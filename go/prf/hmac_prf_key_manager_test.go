@@ -21,15 +21,15 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/clearblade/tink/go/core/registry"
+	"github.com/clearblade/tink/go/prf"
+	"github.com/clearblade/tink/go/prf/subtle"
+	commonpb "github.com/clearblade/tink/go/proto/common_go_proto"
+	hmacpb "github.com/clearblade/tink/go/proto/hmac_prf_go_proto"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
+	"github.com/clearblade/tink/go/subtle/random"
+	"github.com/clearblade/tink/go/testutil"
 	"github.com/golang/protobuf/proto"
-	"github.com/google/tink/go/core/registry"
-	"github.com/google/tink/go/prf"
-	"github.com/google/tink/go/prf/subtle"
-	"github.com/google/tink/go/subtle/random"
-	"github.com/google/tink/go/testutil"
-	commonpb "github.com/google/tink/go/proto/common_go_proto"
-	hmacpb "github.com/google/tink/go/proto/hmac_prf_go_proto"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 )
 
 func TestGetPrimitiveHMACBasic(t *testing.T) {

@@ -24,9 +24,9 @@ package insecurecleartextkeyset
 import (
 	"errors"
 
-	"github.com/google/tink/go/internal"
-	"github.com/google/tink/go/keyset"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
+	"github.com/clearblade/tink/go/internal"
+	"github.com/clearblade/tink/go/keyset"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
 )
 
 var (

@@ -22,7 +22,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/tink/go/subtle/random"
+	"github.com/clearblade/tink/go/subtle/random"
 )
 
 // Tests the implementation against the test vectors from RFC 5869.

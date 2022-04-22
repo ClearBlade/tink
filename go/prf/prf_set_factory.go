@@ -19,9 +19,9 @@ package prf
 import (
 	"fmt"
 
-	"github.com/google/tink/go/core/primitiveset"
-	"github.com/google/tink/go/core/registry"
-	"github.com/google/tink/go/keyset"
+	"github.com/clearblade/tink/go/core/primitiveset"
+	"github.com/clearblade/tink/go/core/registry"
+	"github.com/clearblade/tink/go/keyset"
 )
 
 // NewPRFSet creates a prf.Set primitive from the given keyset handle.

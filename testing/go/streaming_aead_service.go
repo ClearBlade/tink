@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/google/tink/go/keyset"
-	"github.com/google/tink/go/streamingaead"
-	"github.com/google/tink/go/testkeyset"
+	"github.com/clearblade/tink/go/keyset"
+	"github.com/clearblade/tink/go/streamingaead"
+	"github.com/clearblade/tink/go/testkeyset"
 	pb "github.com/google/tink/proto/testing/testing_api_go_grpc"
 )
 

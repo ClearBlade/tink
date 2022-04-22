@@ -19,9 +19,9 @@ package signature_test
 import (
 	"testing"
 
+	"github.com/clearblade/tink/go/core/registry"
+	"github.com/clearblade/tink/go/testutil"
 	"github.com/golang/protobuf/proto"
-	"github.com/google/tink/go/core/registry"
-	"github.com/google/tink/go/testutil"
 )
 
 func TestED25519VerifyGetPrimitiveBasic(t *testing.T) {

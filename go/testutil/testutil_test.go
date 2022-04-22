@@ -20,9 +20,9 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/google/tink/go/subtle/random"
-	"github.com/google/tink/go/testutil"
-	"github.com/google/tink/go/tink"
+	"github.com/clearblade/tink/go/subtle/random"
+	"github.com/clearblade/tink/go/testutil"
+	"github.com/clearblade/tink/go/tink"
 )
 
 func TestDummyAEAD(t *testing.T) {

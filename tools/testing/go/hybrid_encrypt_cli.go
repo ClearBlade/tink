@@ -27,9 +27,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/google/tink/go/hybrid"
-	"github.com/google/tink/go/keyset"
-	"github.com/google/tink/go/testkeyset"
+	"github.com/clearblade/tink/go/hybrid"
+	"github.com/clearblade/tink/go/keyset"
+	"github.com/clearblade/tink/go/testkeyset"
 )
 
 func main() {

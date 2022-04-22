@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/google/tink/go/keyset"
-	"github.com/google/tink/go/prf"
+	"github.com/clearblade/tink/go/keyset"
+	"github.com/clearblade/tink/go/prf"
 )
 
 func Example() {

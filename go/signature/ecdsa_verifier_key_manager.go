@@ -19,11 +19,11 @@ package signature
 import (
 	"fmt"
 
+	"github.com/clearblade/tink/go/keyset"
+	ecdsapb "github.com/clearblade/tink/go/proto/ecdsa_go_proto"
+	tinkpb "github.com/clearblade/tink/go/proto/tink_go_proto"
+	"github.com/clearblade/tink/go/signature/subtle"
 	"github.com/golang/protobuf/proto"
-	"github.com/google/tink/go/keyset"
-	"github.com/google/tink/go/signature/subtle"
-	ecdsapb "github.com/google/tink/go/proto/ecdsa_go_proto"
-	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
 )
 
 const (

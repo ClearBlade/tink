@@ -20,9 +20,9 @@ import (
 	"bytes"
 	"context"
 
-	"github.com/google/tink/go/keyset"
-	"github.com/google/tink/go/signature"
-	"github.com/google/tink/go/testkeyset"
+	"github.com/clearblade/tink/go/keyset"
+	"github.com/clearblade/tink/go/signature"
+	"github.com/clearblade/tink/go/testkeyset"
 	pb "github.com/google/tink/proto/testing/testing_api_go_grpc"
 )
 

@@ -8,13 +8,13 @@ This document contains instructions and Go code snippets for common tasks in
 To install Tink locally run:
 
 ```sh
-go get github.com/google/tink/go/...
+go get github.com/clearblade/tink/go/...
 ```
 
 to run all the tests locally:
 
 ```sh
-cd $GOPATH/go/src/github.com/google/tink/go
+cd $GOPATH/go/src/github.com/clearblade/tink/go
 go test ./...
 ```
 
@@ -22,7 +22,7 @@ Golang Tink API also supports [Bazel](https://www.bazel.build) builds. To run
 the tests using bazel:
 
 ```sh
-cd $GOPATH/go/src/github.com/google/tink/go
+cd $GOPATH/go/src/github.com/clearblade/tink/go
 bazel build ... && bazel test ...
 ```
 
@@ -55,8 +55,8 @@ import (
         "fmt"
         "log"
 
-        "github.com/google/tink/go/aead"
-        "github.com/google/tink/go/keyset"
+        "github.com/clearblade/tink/go/aead"
+        "github.com/clearblade/tink/go/keyset"
 )
 
 func main() {
@@ -99,8 +99,8 @@ import (
         "fmt"
         "log"
 
-        "github.com/google/tink/go/keyset"
-        "github.com/google/tink/go/mac"
+        "github.com/clearblade/tink/go/keyset"
+        "github.com/clearblade/tink/go/mac"
 )
 
 func main() {
@@ -142,8 +142,8 @@ import (
         "fmt"
         "log"
 
-        "github.com/google/tink/go/daead"
-        "github.com/google/tink/go/keyset"
+        "github.com/clearblade/tink/go/daead"
+        "github.com/clearblade/tink/go/keyset"
 )
 
 func main() {
@@ -195,8 +195,8 @@ import (
         "fmt"
         "log"
 
-        "github.com/google/tink/go/keyset"
-        "github.com/google/tink/go/signature"
+        "github.com/clearblade/tink/go/keyset"
+        "github.com/clearblade/tink/go/signature"
 )
 
 func main() {
@@ -269,9 +269,9 @@ import (
         "log"
 
         "github.com/golang/protobuf/proto"
-        "github.com/google/tink/go/hybrid"
-        "github.com/google/tink/go/insecurecleartextkeyset"
-        "github.com/google/tink/go/keyset"
+        "github.com/clearblade/tink/go/hybrid"
+        "github.com/clearblade/tink/go/insecurecleartextkeyset"
+        "github.com/clearblade/tink/go/keyset"
 )
 
 func main() {
@@ -327,9 +327,9 @@ import (
         "fmt"
         "log"
 
-        "github.com/google/tink/go/hybrid"
-        "github.com/google/tink/go/insecurecleartextkeyset"
-        "github.com/google/tink/go/keyset"
+        "github.com/clearblade/tink/go/hybrid"
+        "github.com/clearblade/tink/go/insecurecleartextkeyset"
+        "github.com/clearblade/tink/go/keyset"
 )
 
 func main() {
@@ -366,9 +366,9 @@ import (
         "fmt"
         "log"
 
-        "github.com/google/tink/go/hybrid"
-        "github.com/google/tink/go/insecurecleartextkeyset"
-        "github.com/google/tink/go/keyset"
+        "github.com/clearblade/tink/go/hybrid"
+        "github.com/clearblade/tink/go/insecurecleartextkeyset"
+        "github.com/clearblade/tink/go/keyset"
 )
 
 func main() {
@@ -408,10 +408,10 @@ package main
 import (
         "fmt"
 
-        "github.com/google/tink/go/aead"
-        "github.com/google/tink/go/core/registry"
-        "github.com/google/tink/go/integration/gcpkms"
-        "github.com/google/tink/go/keyset"
+        "github.com/clearblade/tink/go/aead"
+        "github.com/clearblade/tink/go/core/registry"
+        "github.com/clearblade/tink/go/integration/gcpkms"
+        "github.com/clearblade/tink/go/keyset"
 )
 
 const (
@@ -473,8 +473,8 @@ import (
         "fmt"
         "log"
 
-        "github.com/google/tink/go/aead"
-        "github.com/google/tink/go/keyset"
+        "github.com/clearblade/tink/go/aead"
+        "github.com/clearblade/tink/go/keyset"
 )
 
 func main() {
@@ -532,10 +532,10 @@ import (
         "log"
 
         "github.com/golang/protobuf/proto"
-        "github.com/google/tink/go/aead"
-        "github.com/google/tink/go/core/registry"
-        "github.com/google/tink/go/integration/gcpkms"
-        "github.com/google/tink/go/keyset"
+        "github.com/clearblade/tink/go/aead"
+        "github.com/clearblade/tink/go/core/registry"
+        "github.com/clearblade/tink/go/integration/gcpkms"
+        "github.com/clearblade/tink/go/keyset"
 )
 
 const (
